@@ -1,0 +1,153 @@
+/*=============== Options ====================================================================================================================================================================*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+}
+
+.page {
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.5s all ease;
+
+    > .overlay {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        transition:
+            opacity 0.5s ease 0s,
+            visibility 0s ease 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &._active {
+        transform: translateX(-250px);
+
+        > .overlay {
+            transition-delay: 0s;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.main-columns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media (max-width: $break_768) {
+        display: block;
+    }
+
+    margin-bottom: 20px !important;
+}
+
+.container {
+    max-width: $maxWidthContainer + 2 * 20px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: $break_768) {
+        max-width: $maxWidthContainer + 2 * 10px;
+        padding: 0 10px;
+    }
+}
+
+/*=============== /Options ====================================================================================================================================================================*/
+
+/*=============== Common ====================================================================================================================================================================*/
+
+.ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ibg img {
+    display: none;
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 65px;
+    height: 44px;
+    margin: 0;
+    padding: 0 33px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: #000;
+    background: #000;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 0 0 #000;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    background: linear-gradient(180deg, #fff 0%, #fff 44%, #d3d3d3 100%);
+
+    &:hover {
+        filter: brightness(1) contrast(1.4);
+    }
+}
+
+.button-gold {
+    background: linear-gradient(180deg, #ecc665 0%, #8e5e00 100%);
+    color: #fff;
+}
+
+.go-top {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    opacity: 0;
+
+    transition:
+        transform 0.3s ease 0s,
+        opacity 0.3s ease 0s;
+
+    button {
+        background: transparent;
+        border: none;
+        padding: 15px;
+    }
+    img {
+        width: 48px;
+        display: block;
+    }
+
+    &._active {
+        pointer-events: all;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*=============== /Common ====================================================================================================================================================================*/

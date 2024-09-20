@@ -1,0 +1,46 @@
+/*=============== Games-nav ====================================================================================================================================================================*/
+
+.games-nav {
+}
+.gnav {
+    margin: 10px 0;
+}
+.gnav-wrapper {
+}
+.gnav-inner {
+    // .gnav-inner__nav
+
+    &__nav {
+    }
+}
+.gnav-nav {
+}
+.gnav-swiper {
+    width: 100%;
+    .swiper-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.gnav-slide {
+    width: auto;
+    
+    a {
+        display: inline-block;
+        line-height: 42px;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 0 24px;
+        transition: 0.2s all ease;
+
+        &:hover {
+            color: #FFD67D;
+        }
+    }
+}
+
+/*=============== /Games-nav ====================================================================================================================================================================*/

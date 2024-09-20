@@ -1,0 +1,139 @@
+/*=============== Header ====================================================================================================================================================================*/
+
+.header {
+    background-color: #000;
+    position: relative;
+}
+
+.header-inner {
+    display: grid;
+    > * { align-self: center }
+    grid-template-columns: 1fr auto 1fr;
+    min-height: 60px;
+
+    @media (max-width: $break_1200) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-logo {
+    margin: 0 0 0 -5px;
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    img {
+        height: 75px;
+        display: block;
+    }
+
+    @media (max-width: $break_1200) {
+        margin: 0;
+
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+
+        img {
+            margin: 0 auto;
+        }
+
+        a {
+            grid-column: 2;
+        }
+    }
+}
+
+.header-nav {
+    .menu {
+        padding: 0;
+    }
+
+    .menu-item {
+        list-style-type: none;
+        display: inline-block;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+
+            color: #fff;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 30px 8px;
+
+            transition: color 0.3s ease 0s;
+
+            &:hover {
+                color: #ffd67d;
+            }
+
+            > img {
+                height: 24px;
+                padding-right: 4px;
+            }
+        }
+    }
+
+    @media (max-width: $break_1200) {
+        display: none;
+    }
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -5px -8px;
+
+    @media (max-width: $break_1200) {
+        width: 100%;
+        margin: 0 -5px;
+    }
+
+    // .header-buttons__button
+
+    &__button {
+        min-width: 90px;
+        margin: 5px 8px;
+        white-space: nowrap;
+
+        @media (max-width: $break_1200) {
+            width: 100%;
+
+            margin: 3px 3px 8px;
+        }
+    }
+}
+
+.header-burger {
+    background-color: transparent;
+    border: none;
+
+    display: none;
+    align-items: center;
+    justify-self: end;
+    grid-column: 3;
+
+    img {
+        width: 35px;
+        display: block;
+    }
+
+    @media (max-width: $break_1200) {
+        display: flex;
+    }
+}
+
+._lock {
+    overflow: hidden;
+}
+
+/*=============== /Header ====================================================================================================================================================================*/

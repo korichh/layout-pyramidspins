@@ -1,0 +1,110 @@
+/*=============== Footer ====================================================================================================================================================================*/
+
+.footer {
+}
+.footer-wrapper {
+}
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-age {
+    // .footer-age__icon
+
+    &__icon {
+        img {
+            max-height: 80px;
+            padding: 5px 10px;
+            display: block;
+        }
+    }
+
+    margin-bottom: 20px;
+}
+.footer-copyright {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    // .footer-copyright__title
+
+    &__title {
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    // .footer-copyright__text
+
+    &__text {
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+}
+.footer-nav {
+    background-color: #1e1f21;
+    // .footer-nav__inner
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media (max-width: $break_1024) {
+            flex-direction: column;
+        }
+        .menu {
+            margin: auto;
+            list-style-type: none;
+            padding: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @media (max-width: $break_1024) {
+                flex-direction: column;
+            }
+        }
+        .menu-item {
+            a {
+                display: inline-block;
+                padding: 15px 30px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+
+                transition: color 0.3s ease 0s;
+                &:hover {
+                    color: #ffd67d;
+                }
+            }
+        }
+        .languages {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .language {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0 0 4px #fff;
+            img {
+                margin-right: 9px;
+            }
+            margin: 10px 0;
+        }
+    }
+}
+
+/*=============== /Footer ====================================================================================================================================================================*/

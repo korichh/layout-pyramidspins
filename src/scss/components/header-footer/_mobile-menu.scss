@@ -1,0 +1,90 @@
+/*=============== Mobile-menu ====================================================================================================================================================================*/
+
+.mobile-menu {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #000;
+    height: 100%;
+
+    padding: 15px 20px 15px 30px;
+
+    .menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // .menu-header__title
+
+        &__title {
+            font-size: 21px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        // .menu-header__button
+
+        &__button {
+            background-color: transparent;
+            border: none;
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .menu-nav {
+        .menu {
+            padding: 0;
+            list-style-type: none;
+        }
+        .menu-item {
+            a {
+                display: flex;
+                align-items: center;
+                padding: 10px 0;
+                font-size: 18px;
+                text-decoration: none;
+                color: #fff;
+
+                transition: color 0.3s ease 0s;
+
+                &:hover {
+                    color: #ffd67d;
+                }
+            }
+
+            img {
+                margin-right: 10px;
+                display: block;
+                height: 20px;
+            }
+        }
+    }
+
+    .menu-buttons {
+        border-top: 1px solid #1f252f;
+        opacity: 0.5;
+        // .menu-buttons__button
+
+        &__button {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+
+            img {
+                margin-right: 10px;
+                display: block;
+                width: 23px;
+            }
+        }
+    }
+}
+
+/*=============== /Mobile-menu ====================================================================================================================================================================*/

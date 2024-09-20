@@ -1,0 +1,301 @@
+/*=============== Sidebar ====================================================================================================================================================================*/
+
+.sidebar {
+    width: 25%;
+    margin-left: 15px;
+    max-width: 100%;
+    min-width: 300px;
+
+    @media (max-width: $break_1024) {
+        width: 40%;
+    }
+
+    @media (max-width: $break_768) {
+        margin: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    @media (max-width: $break_576) {
+        min-width: unset;
+    }
+}
+.sidebar-wrapper {
+}
+.sidebar-inner {
+    margin: -10px 0;
+
+    @media (max-width: $break_768) {
+        display: flex;
+        gap: 16px;
+    }
+
+    @media (max-width: $break_576) {
+        display: block;
+    }
+}
+.sidebar-section {
+    overflow: hidden;
+    min-height: 300px;
+    margin: 10px 0;
+    background-color: #1e1f21;
+    border: 1px solid #2d3035;
+    border-radius: 30px;
+    transition: 0.2s all ease;
+    padding-bottom: 6px;
+
+    @media (max-width: $break_768) {
+        flex: 1 1 50%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: $break_576) {
+        flex: unset;
+    }
+
+    // .sidebar-section__title
+
+    &__title {
+        padding: 12px 10px;
+        line-height: normal;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        background: #1e1f21;
+    }
+
+    // .sidebar-section__promo
+
+    &__promo {
+    }
+}
+.sidebar-swiper {
+    max-height: 312px;
+
+    @media (max-width: $break_768) {
+        max-height: 400px;
+        margin: auto;
+    }
+
+    @media (max-width: $break_576) {
+        margin: unset;
+        max-height: 312px;
+    }
+
+    .swiper-wrapper {
+    }
+}
+
+.sidebar-slide {
+    // .sidebar-slide__inner
+
+    &__inner {
+    }
+
+    // .sidebar-slide__item
+
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding: 4px 10px;
+        text-decoration: none;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+            background: #2D3035;
+
+            .sidebar-slide__game {
+                img {
+                    filter: brightness(50%);
+                }
+            }
+
+            .sidebar-slide__button {
+                opacity: 1;
+            }
+        }
+    }
+
+    // .sidebar-slide__game
+
+    &__game {
+        position: relative;
+        img {
+            width: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            transition: filter 0.3s ease 0s;
+        }
+    }
+
+    // .sidebar-slide__button
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 76px;
+        height: 26px;
+        font-size: 10px;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    // .sidebar-slide__content
+
+    &__content {
+        flex: 1;
+        margin: 0 8px 0 16px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    // .sidebar-slide__money
+
+    &__money {
+    }
+
+    // .sidebar-slide__user
+
+    &__user {
+        color: #ffd67d;
+        line-height: 20px;
+    }
+
+    // .sidebar-slide__time
+
+    &__time {
+        float: left;
+        margin: 0 8px 0 0;
+        color: #49a356;
+    }
+
+    // .sidebar-slide__title
+
+    &__title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+.sidebar-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px 20px;
+
+    // .sidebar-promo__title
+
+    &__title {
+        text-align: center;
+        padding-top: 4px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    // .sidebar-promo__wrapper
+
+    &__wrapper {
+    }
+
+    // .sidebar-promo__inner
+
+    &__inner {
+    }
+
+    // .sidebar-promo__prize
+
+    &__prize {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    // .sidebar-promo__image
+
+    &__image {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 260px;
+        border-radius: 30px;
+        box-shadow:
+            0 2px 4px 0 rgba(0, 0, 0, 0.5),
+            inset 0 1px 2px 0 rgba(255, 255, 255, 0.5);
+        object-fit: cover;
+
+        @media (max-width: $break_1024) {
+            height: 300px;
+        }
+
+        @media (max-width: $break_768) {
+            height: 230px;
+        }
+    }
+
+    // .sidebar-promo__action
+
+    &__action {
+        margin-top: -20px;
+    }
+
+    // .sidebar-promo__button
+
+    &__button {
+    }
+
+    // .sidebar-promo__timer
+
+    &__timer {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+.sidebar-timer {
+    // .sidebar-timer__label
+
+    &__label {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__digits {
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffd67d;
+    }
+
+    // .sidebar-timer__content
+
+    &__content {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+
+        span {
+            display: inline-block;
+            width: 37px;
+        }
+    }
+}
+
+/*=============== Sidebar ====================================================================================================================================================================*/

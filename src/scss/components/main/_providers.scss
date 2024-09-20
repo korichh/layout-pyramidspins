@@ -1,0 +1,37 @@
+/*=============== Providers ====================================================================================================================================================================*/
+
+.providers {
+    margin-bottom: 10px;
+}
+.providers-wrapper {
+}
+.container {
+}
+.providers-inner {
+}
+.providers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+.providers-item {
+    a {
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: 50px;
+        padding: 5px 10px;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*=============== /Providers ====================================================================================================================================================================*/

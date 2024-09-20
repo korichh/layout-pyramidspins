@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid Spins</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/options.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="overlay"></div>
+        <div class="go-top">
+            <button><img src="img/header/go-top.svg" alt=""></button>
+        </div>
+        <section class="popup">
+            <div class="popup-inner">
+                <button class="popup-close">
+                    <img src="img/popup/close.svg" alt="">
+                </button>
+                <div class="signup popup-section">
+                    <div class="signup-inner popup-section__inner">
+                        <div class="signup-header popup-section__header">
+                            <h2 class="signup-title">
+                                Sign up
+                            </h2>
+                        </div>
+                        <div class="signup-columns">
+                            <div class="signup-column">
+                                <h3 class="signup-caption">
+                                    Today only!
+                                </h3>
+                                <img src="img/popup/signup_promo.png" alt="">
+                                <div class="signup-timer">
+                                    <h4 class="sign-text">
+                                        Time left:
+                                    </h4>
+                                    <h3 class="signup-caption">
+                                        00:00
+                                    </h3>
+                                </div>
+                                <h3 class="signup-caption">
+                                    Hurry up!
+                                </h3>
+                            </div>
+                            <div class="signup-column">
+                                <form class="signup-form" method="post">
+                                    <div class="row">
+                                        <div class="column">
+                                            <label class="signup-label sign-text" for="signup-email">Email</label>
+                                            <input class="signup-input form-input" type="email" id="signup-email" name="signup-email" maxlength="255" placeholder="Enter email" aria-required="true">
+                                            <div class="help-block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column">
+                                            <label class="signup-label sign-text" for="signup-password">Password</label>
+                                            <input class="signup-input form-input" type="password" id="signup-password" name="signup-password" maxlength="32" placeholder="Password (6-32 characters)" aria-required="true">
+                                            <div class="help-block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column">
+                                            <label class="signup-label sign-text" for="signup-currency">Currency</label>
+                                            <select class="signup-input form-input" id="signup-currency" name="signup-currency">
+                                                <option value="RUB">RUB</option>
+                                                <option value="EUR" selected>EUR</option>
+                                            </select>
+                                            <div class="help-block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-checkbox">
+                                        <div class="column">
+                                            <label>
+                                                <input type="checkbox" id="signup-verified" name="signup-verified" value="1" checked>
+                                                <div class="sign-text">
+                                                    I am 18 years old and I accept the
+                                                    <a target="_blank" href="#">Terms and Conditions</a>
+                                                </div>
+                                            </label>
+                                            <div class="help-block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-submit">
+                                        <div class="column">
+                                            <button type="submit" class="button button-gold">Play</button>
+                                        </div>
+                                    </div>
+                                    <div class="row row-signin">
+                                        <div class="column">
+                                            <div class="sign-text">
+                                                Already have an account?
+                                                <a href="#sign-in">Login</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-signup">
+                                        <div class="column">
+                                            <div class="sign-text">
+                                                Sign up via
+                                            </div>
+                                            <ul class="signup-socials">
+                                                <li class="signup-social">
+                                                    <a href="#">
+                                                        <img src="img/popup/twitter.svg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="signup-social">
+                                                    <a href="#">
+                                                        <img src="img/popup/google.svg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="signup-social">
+                                                    <a href="#">
+                                                        <img src="img/popup/telegram.svg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-support">
+                        Support number <a href="tel:+442039668318">+44 (20) 396-683-18</a>
+                    </div>
+                </div>
+                <div class="login popup-section">
+                    <div class="login-inner popup-section__inner">
+                        <div class="login-header popup-section__header">
+                            <h2 class="login-title">
+                                Sign in
+                            </h2>
+                        </div>
+                        <form action="#" method="post" class="login-form">
+                            <div class="row">
+                                <div class="column">
+                                    <label class="login-label sign-text" for="login-login">Email</label>
+                                    <input class="login-input form-input" type="email" id="login-login" name="login-login" placeholder="Enter email" aria-required="true">
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="column">
+                                    <label class="login-label sign-text" for="login-password">Password</label>
+                                    <input class="login-input form-input" type="password" id="login-password" name="login-password" placeholder="Enter password" aria-required="true">
+                                    <div class="help-block"></div>
+                                </div>
+                            </div>
+                            <div class="row row-submit">
+                                <div class="column">
+                                    <button type="submit" class="button button-gold">Login</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="login-text sign-text">
+                                        Login with
+                                    </div>
+                                    <ul class="login-socials">
+                                        <li class="login-social">
+                                            <a href="#">
+                                                <img src="img/popup/twitter.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="login-social">
+                                            <a href="#">
+                                                <img src="img/popup/google.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="login-social">
+                                            <a href="#">
+                                                <img src="img/popup/telegram.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <div class="login-text sign-text">New to Pyramid Spins Casino?</div>
+                                    <a class="button" href="#sign-up">Sign up</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="header-inner__logo header-logo">
+                        <a href="#">
+                            <img src="img/header/logo.svg" alt="">
+                        </a>
+                        <button class="header-inner__burger header-burger">
+                            <img src="img/header/burger.svg" alt="">
+                        </button>
+                    </div>
+                    <nav class="header-inner__nav header-nav">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">
+                                    <img src="img/header/games.svg" alt="">
+                                    Games
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    <img src="img/header/sport.svg" alt="">
+                                    Sport
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    <img src="img/header/promo.svg" alt="">
+                                    Promo
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    <img src="img/header/tournaments.svg" alt="">
+                                    Tournaments
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    <img src="img/header/lottery.svg" alt="">
+                                    Lotteries
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    <img src="img/header/app.svg" alt="">
+                                    Application
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-inner__buttons header-buttons">
+                        <a href="#sign-up" class="header-buttons__button button button-gold">
+                            Sign up
+                        </a>
+                        <a href="#sign-in" class="header-buttons__button button">
+                            Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="banner-wrapper">
+                    <div class="container">
+                        <div class="banner-inner">
+                            <div class="banner-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide1.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide1_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Hurry up to get</span><br>
+                                                            <span class="highlighted" style="font-size:40px">450% bonus</span><br>
+                                                            <span class="highlighted" style="font-size:40px">for first</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">deposits!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Get</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide2.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide2_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Hurry up to get</span><br>
+                                                            <span class="highlighted" style="font-size:40px">a bonus</span><br>
+                                                            <span class="highlighted" style="font-size:40px">for connecting</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">the Telegram bot!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Get</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide3.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide3_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="font-size:30px">Get</span><br>
+                                                            <span style="color:#f1c40f;font-size:28px">your bonus</span><br>
+                                                            <span style="font-size:18pt">for installing the application!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Install</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide4.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide4_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Don't miss!</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Samsung</span><br>
+                                                            <span style="font-size:40px">Laptop</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">already in the tournament!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide5.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide5_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Incredible prizes!</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Gaming</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Laptop</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">in the new lottery!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide6.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide6_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Incredible prizes!</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Samsung</span><br>
+                                                            <span class="highlighted" style="font-size:40px">TV</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">in the new lottery!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide7.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide7_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Only now!</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Nespresso</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Coffee Machine</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">hurry up to get!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide banner-slide">
+                                        <div class="banner-slide__inner">
+                                            <picture class="banner-slide__picture">
+                                                <source srcset="img/banner/slide8.jpg" media="(min-width: 993px)">
+                                                <img class="image" src="img/banner/slide8_min.jpg" alt="">
+                                            </picture>
+                                            <div class="banner-slide__overlay">
+                                                <div class="banner-slide__content">
+                                                    <div class="banner-slide__text">
+                                                        <p>
+                                                            <span style="color:#ffffff; font-size:20px">Gifts in the lottery</span><br>
+                                                            <span class="highlighted" style="font-size:40px">Lucky </span><br>
+                                                            <span class="highlighted" style="font-size:40px">Ticket</span><br>
+                                                            <span style="color:#ffffff; font-size:20px">don't miss your chance!</span>
+                                                        </p>
+                                                    </div>
+                                                    <a href="#sign-up" class="banner-slide__button button button-gold">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games-nav gnav">
+                <div class="gnav-wrapper">
+                    <div class="container">
+                        <div class="gnav-inner">
+                            <nav class="gnav-inner__nav gnav-nav">
+                                <div class="swiper gnav-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                All
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                New
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                Top Games
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                Slots
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                Table Games
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                Live Show
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide gnav-slide">
+                                            <a href="#">
+                                                Other games
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main-columns container">
+                <section class="games">
+                    <div class="games-wrapper">
+                        <div class="games-inner">
+                            <div class="games-search">
+                                <form class="games-search__form games-form" action="#" method="get">
+                                    <div class="games-form__search">
+                                        <input type="text" name="s" placeholder="Search a game">
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="games-list">
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item1.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Miss Cherry Fruits
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item2.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Four Lucky Clover
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item3.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            3 Coins
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item4.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Big Catch Bonanza
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/netgame.svg" alt="">
+                                                <span class="games-item__provider-name">NetGame</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item5.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Book of Life
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/chilligames.svg" alt="">
+                                                <span class="games-item__provider-name">Chilli games</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item6.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Sweet Rush Megaways
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item7.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Savage Buffalo Spirit Megaways
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item8.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Maya Sun
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item9.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Gemhalla
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item10.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Bonanza Billion
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item11.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Lucky Dama Muerta
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item12.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Luck Magic
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item13.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Lady Fortune
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item14.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Coin Volcano
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item15.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Candy Monsta
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item16.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Book of Sun Multichance
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item17.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Hit more Gold
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item18.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Dragon Pearls:hold and win
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item19.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Buffalo Win
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/pgsoft.png" alt="">
+                                                <span class="games-item__provider-name">PG Soft</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item20.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Lucky Clover Lady
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/pgsoft.png" alt="">
+                                                <span class="games-item__provider-name">PG Soft</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item21.svg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            15 Dragon Pearls: Hold and Win
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item22.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Avalon: The Lost Kingdom
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item23.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Sun of Egypt 3
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/booongo.svg" alt="">
+                                                <span class="games-item__provider-name">Booongo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="games-item">
+                                    <div class="games-item__inner">
+                                        <div class="games-item__image">
+                                            <img src="img/games/item24.jpg" alt="">
+                                            <div class="games-item__overlay">
+                                                <div class="games-item__buttons">
+                                                    <a class="games-item__button button button-gold" href="#sign-up">Play</a>
+                                                    <a class="games-item__button button demo" href="#">Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="games-item__title">
+                                            Platinum Lightning
+                                        </h3>
+                                        <div class="games-item__info">
+                                            <div class="games-item__provider">
+                                                <img src="img/games/bgaming.svg" alt="">
+                                                <span class="games-item__provider-name">BGaming</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    <div class="sidebar-wrapper">
+                        <div class="sidebar-inner">
+                            <div class="sidebar-section">
+                                <h3 class="sidebar-section__title">Latest wins</h3>
+                                <div class="swiper sidebar-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide sidebar-slide">
+                                            <div class="sidebar-slide__inner">
+                                                <a class="sidebar-slide__item" href="#sign-up">
+                                                    <div class="sidebar-slide__game">
+                                                        <img src="img/sidebar/item1.jpg" alt="">
+                                                        <div class="sidebar-slide__button button button-gold">Play</div>
+                                                    </div>
+                                                    <div class="sidebar-slide__content">
+                                                        <div class="sidebar-slide__money">
+                                                            <span>€</span>
+                                                            <span>185</span>
+                                                        </div>
+                                                        <div class="sidebar-slide__user">
+                                                            dru***
+                                                        </div>
+                                                        <div class="sidebar-slide__time">
+                                                            <span>20:43:07</span>
+                                                        </div>
+                                                        <h5 class="sidebar-slide__title">Fruit strike</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide sidebar-slide">
+                                            <div class="sidebar-slide__inner">
+                                                <a class="sidebar-slide__item" href="#sign-up">
+                                                    <div class="sidebar-slide__game">
+                                                        <img src="img/sidebar/item2.jpg" alt="">
+                                                        <div class="sidebar-slide__button button button-gold">Play</div>
+                                                    </div>
+                                                    <div class="sidebar-slide__content">
+                                                        <div class="sidebar-slide__money">
+                                                            <span>€</span>
+                                                            <span>185</span>
+                                                        </div>
+                                                        <div class="sidebar-slide__user">
+                                                            dru***
+                                                        </div>
+                                                        <div class="sidebar-slide__time">
+                                                            <span>20:43:07</span>
+                                                        </div>
+                                                        <h5 class="sidebar-slide__title">The Moneymania</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide sidebar-slide">
+                                            <div class="sidebar-slide__inner">
+                                                <a class="sidebar-slide__item" href="#sign-up">
+                                                    <div class="sidebar-slide__game">
+                                                        <img src="img/sidebar/item3.jpg" alt="">
+                                                        <div class="sidebar-slide__button button button-gold">Play</div>
+                                                    </div>
+                                                    <div class="sidebar-slide__content">
+                                                        <div class="sidebar-slide__money">
+                                                            <span>€</span>
+                                                            <span>185</span>
+                                                        </div>
+                                                        <div class="sidebar-slide__user">
+                                                            dru***
+                                                        </div>
+                                                        <div class="sidebar-slide__time">
+                                                            <span>20:43:07</span>
+                                                        </div>
+                                                        <h5 class="sidebar-slide__title">Gonzos quest</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide sidebar-slide">
+                                            <div class="sidebar-slide__inner">
+                                                <a class="sidebar-slide__item" href="#sign-up">
+                                                    <div class="sidebar-slide__game">
+                                                        <img src="img/sidebar/item4.jpg" alt="">
+                                                        <div class="sidebar-slide__button button button-gold">Play</div>
+                                                    </div>
+                                                    <div class="sidebar-slide__content">
+                                                        <div class="sidebar-slide__money">
+                                                            <span>€</span>
+                                                            <span>185</span>
+                                                        </div>
+                                                        <div class="sidebar-slide__user">
+                                                            dru***
+                                                        </div>
+                                                        <div class="sidebar-slide__time">
+                                                            <span>20:43:07</span>
+                                                        </div>
+                                                        <h5 class="sidebar-slide__title">Avalon: The Lost Kingdom</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide sidebar-slide">
+                                            <div class="sidebar-slide__inner">
+                                                <a class="sidebar-slide__item" href="#sign-up">
+                                                    <div class="sidebar-slide__game">
+                                                        <img src="img/sidebar/item5.jpg" alt="">
+                                                        <div class="sidebar-slide__button button button-gold">Play</div>
+                                                    </div>
+                                                    <div class="sidebar-slide__content">
+                                                        <div class="sidebar-slide__money">
+                                                            <span>€</span>
+                                                            <span>185</span>
+                                                        </div>
+                                                        <div class="sidebar-slide__user">
+                                                            dru***
+                                                        </div>
+                                                        <div class="sidebar-slide__time">
+                                                            <span>20:43:07</span>
+                                                        </div>
+                                                        <h5 class="sidebar-slide__title">Monkey bar</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-section">
+                                <h3 class="sidebar-section__title">Lottery</h3>
+                                <div class="sidebar-section__promo sidebar-promo">
+                                    <h4 class="sidebar-promo__title">
+                                        Lucky ticket
+                                    </h4>
+                                    <div class="sidebar-promo__wrapper">
+                                        <div class="sidebar-promo__inner">
+                                            <div class="sidebar-promo__prize">
+                                                <span>€</span>
+                                                <span>1,000</span>
+                                            </div>
+                                            <img class="sidebar-promo__image" src="img/sidebar/lottery.jpg" alt="Lucky Ticket">
+                                            <div class="sidebar-promo__action">
+                                                <a class="sidebar-promo__button button button-gold" href="#">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="sidebar-promo__timer sidebar-timer">
+                                            <div class="sidebar-timer__label">Ends in</div>
+                                            <div class="sidebar-timer__digits">00 00 00 00</div>
+                                            <div class="sidebar-timer__content"><span>DD</span> <span>HH</span> <span>MM</span> <span>SS</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <section class="payment">
+                <div class="payment-wrapper">
+                    <div class="container">
+                        <div class="payment-inner">
+                            <ul class="payment-list">
+                                <li class="payment-item">
+                                    <a href="#sign-up"><img src="img/providers/provider01.svg" alt=""></a>
+                                </li>
+                                <li class="payment-item">
+                                    <a href="#sign-up"><img src="img/providers/provider02.svg" alt=""></a>
+                                </li>
+                                <li class="payment-item">
+                                    <a href="#sign-up"><img src="img/providers/provider03.svg" alt=""></a>
+                                </li>
+                                <li class="payment-item">
+                                    <a href="#sign-up"><img src="img/providers/provider04.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="providers">
+                <div class="providers-wrapper">
+                    <div class="providers-inner">
+                        <ul class="providers-list">
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider05.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider06.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider07.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider08.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider09.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider10.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider11.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider12.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider13.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider14.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider15.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider16.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider17.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider18.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider19.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider20.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider21.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider22.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider23.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider24.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider25.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider26.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider27.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider28.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider29.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider30.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider31.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider32.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider33.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider34.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider35.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider36.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider37.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider38.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider39.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider40.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider41.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider42.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider43.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider44.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider45.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider46.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider47.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider48.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider49.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider50.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider51.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider52.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider53.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider54.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider55.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider56.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider57.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider58.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider59.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider60.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider61.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider62.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider63.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider64.svg" alt=""></a></li>
+                            <li class="providers-item"><a href="#"><img src="img/providers/provider65.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="footer-inner">
+                        <div class="footer-age">
+                            <div class="footer-age__icon">
+                                <img src="img/footer/18.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="footer-copyright">
+                            <h4 class="footer-copyright__title">
+                                Pyramid Spins
+                            </h4>
+                            <div class="footer-copyright__text">
+                                © Copyright 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <div class="container">
+                        <div class="footer-nav__inner">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#">ABOUT US</a></li>
+                                <li class="menu-item"><a href="#">PRIVACY POLICY</a></li>
+                                <li class="menu-item"><a href="#">RESPONSIBLE GAMING</a></li>
+                                <li class="menu-item"><a href="#">TERMS & CONDITIONS</a></li>
+                                <li class="menu-item"><a href="#">BETTING RULES</a></li>
+                                <li class="menu-item"><a href="#">CONTACTS</a></li>
+                                <li class="menu-item"><a href="#">FAQS</a></li>
+                            </ul>
+                            <ul class="languages">
+                                <li class="language">
+                                    <img src="img/footer/uk.svg" alt="">
+                                    EN
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <section class="mobile-menu">
+        <div class="mobile-menu__header menu-header">
+            <h3 class="menu-header__title">
+                Menu
+            </h3>
+            <button class="menu-header__button menu-close">
+                <img src="img/header/close.svg" alt="">
+            </button>
+        </div>
+        <nav class="mobile-menu__nav menu-nav">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="img/header/games.svg" alt="">
+                        Games
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="img/header/sport.svg" alt="">
+                        Sport
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="img/header/promo.svg" alt="">
+                        Promo
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="img/header/tournaments.svg" alt="">
+                        Tournaments
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="img/header/lottery.svg" alt="">
+                        Lotteries
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="img/header/app.svg" alt="">
+                        Application
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__buttons menu-buttons">
+            <a href="#" class="menu-buttons__button menu-button">
+                <img src="img/header/support.png" alt="">
+                Support
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>

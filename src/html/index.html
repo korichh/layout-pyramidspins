@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+@include('components/options/head.html')
+
+<body>
+    <div class="page">
+        <div class="overlay"></div>
+        <div class="go-top">
+            <button><img src="img/header/go-top.svg" alt=""></button>
+        </div>
+        @include('components/header-footer/popup.html')
+        @include('components/header-footer/header.html')
+        <main class="main">
+            @include('components/main/banner.html')
+            @include('components/main/games-nav.html')
+            <div class="main-columns container">
+                @include('components/main/games.html')
+                @include('components/main/sidebar.html')
+            </div>
+            @include('components/main/payment.html')
+            @include('components/main/providers.html')
+        </main>
+        @include('components/header-footer/footer.html')
+    </div>
+    @include('components/header-footer/mobile-menu.html')
+</body>
+
+</html>
